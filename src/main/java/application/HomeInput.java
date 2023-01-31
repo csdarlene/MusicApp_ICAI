@@ -53,7 +53,7 @@ public class HomeInput {
         }
         for (Users u : userService.getAllUsers()) {
             if ((u.getUsername().equals(username)) && u.getPassword().equals(password)) {
-                System.out.println(".....Signing in......");
+                System.out.println(".....Signing in.....");
                 return;
             }
         }
@@ -158,7 +158,7 @@ public class HomeInput {
         createUserDetail();
         Users u1 = new Users(username, password, ud1);
         userService.createUsers(u1);
-        System.out.println(".....Signing in....");
+        System.out.println(".....Signing in.....");
         return 1;
     }
 
