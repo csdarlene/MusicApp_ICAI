@@ -21,7 +21,7 @@ public class HomeInput {
     public void frontPage() {
         try {
             scanner = new Scanner(System.in);
-            System.out.println("--------Welcome--------\n1- Sign In \n2- Register\n0- Quit");
+            System.out.println("--------Welcome--------\n1- Sign In \n2- Sign Up\n0- Quit");
             new Scanner(System.in);
             do {
                 int option = scanner.nextInt();
