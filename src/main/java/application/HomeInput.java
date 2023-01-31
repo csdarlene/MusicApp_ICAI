@@ -27,7 +27,14 @@ public class HomeInput {
                 int option = scanner.nextInt();
                 switch (option) {
                     case 1 -> {
-                        signIn();
+                        scanner = new Scanner(System.in);
+                        System.out.print("Enter username: ");
+                        username = scanner.nextLine().toLowerCase();
+
+                        System.out.print("Enter password: ");
+                        String password = scanner.nextLine();
+
+                        signIn(username, password);
                         homePage();
                     }
                     case 2 -> signUp();
@@ -40,13 +47,7 @@ public class HomeInput {
         }
     }
 
-    public void signIn() {
-        scanner = new Scanner(System.in);
-        System.out.print("Enter username: ");
-        username = scanner.nextLine().toLowerCase();
-
-        System.out.print("Enter password: ");
-        String password = scanner.nextLine();
+    public void signIn(String username,String password) {
         if (("admin".equals(username)) && ("ADMIN".equals(password))) {
             maintenance();
         }
@@ -57,7 +58,6 @@ public class HomeInput {
             }
         }
         System.out.println("Username and/or password is incorrect");
-
         frontPage();
     }
 
