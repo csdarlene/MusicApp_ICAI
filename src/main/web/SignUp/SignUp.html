@@ -7,27 +7,47 @@
         }
     </style>
     <title>Sign up - ICAI</title>
-
-    <a  href="../Welcome_Home/FrontPage.html">     <img src="../pics/ICAI_logo.png"></a>
+    <link rel="shortcut icon" href="../pics/ICAI.png" type="image/x-icon">
+    <a href="../Welcome_Home/FrontPage.html"> <img src="../pics/ICAI_logo.png"></a>
 
 
 </head>
->
+
 <body>
 <h4>Welcome to ICAI</h4>
-<input type="text" placeholder="Name">
-<br>
-<input type="email" placeholder="Email">
-<br>
-<input type="date" placeholder="Birthday">
-<br>
-<input type="text" placeholder="Username">
-<br>
-<input type="password" placeholder="Password">
-<br>
+
+<form method="post">
+    <input type="text" placeholder="Name" name="Name"
+           autocomplete="off"
+           required
+           maxlength="20">
+    <br>
+    <input type="email" placeholder="Email" name="Email"
+           autocomplete="off"
+           required
+           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z0-9.-]">
+
+    <h6>Birthday:<input type="date" name="Birthday"
+                        autocomplete="off"
+                        required
+                        min="1940-01-01"
+                        max="2010-12-31"
+    ></h6>
+
+    <input type="text" placeholder="Username" name="Username"
+           autocomplete="off"
+           required>
+    <br>
+    <input type="password" placeholder="Password" name="Password"
+           autocomplete="off"
+           required>
+    <br>
+    <input type="submit" value="Sign up">
+</form>
 <br>
 <a href="../SignIn/SignIn.html">Already a member? Sign in</a>
 <br>
-<button>Sign up</button>
+
+
 </body>
 </html>
