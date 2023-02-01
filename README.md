@@ -1,3 +1,4 @@
-#Music App
-Web
+# ICAI
+## Music App
+Web app
 ## Getting Started
