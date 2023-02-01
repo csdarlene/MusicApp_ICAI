@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
     <style>
         body {
@@ -8,7 +8,7 @@
     </style>
     <title>Sign up - ICAI</title>
     <link rel="shortcut icon" href="../pics/ICAI.png" type="image/x-icon">
-    <a href="../Welcome_Home/FrontPage.html"> <img src="../pics/ICAI_logo.png"></a>
+    <a href="../Welcome_Home/FrontPage.html"> <img src="../pics/ICAI_logo.png" alt=""></a>
 
 
 </head>
@@ -17,37 +17,40 @@
 <h4>Welcome to ICAI</h4>
 
 <form method="post">
-    <input type="text" placeholder="Name" name="Name"
-           autocomplete="off"
-           required
-           maxlength="20">
+    <label for="Name"></label><input type="text" placeholder="Name" id="Name"
+                                     autocomplete="off"
+                                     required
+                                     maxlength="20">
     <br>
-    <input type="email" placeholder="Email" name="Email"
-           autocomplete="off"
-           required
-           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z0-9.-]">
+    <label for="Email"></label><input type="email" placeholder="Email" id="Email"
+                                      autocomplete="off"
+                                      required
+                                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z0-9.-]">
 
-    <h6>Birthday:<input type="date" name="Birthday"
-                        autocomplete="off"
-                        required
-                        min="1940-01-01"
-                        max="2010-12-31"
+    <h6>Birthday:<label for="Birthday"></label><input type="date" id="Birthday"
+                                                      autocomplete="off"
+                                                      required
+                                                      min="1940-01-01"
+                                                      max="2010-12-31"
     ></h6>
 
-    <input type="text" placeholder="Username" name="Username"
-           autocomplete="off"
-           required>
+    <label for="Username"></label><input type="text" placeholder="Username" id="Username"
+                                         autocomplete="off"
+                                         maxlength="20"
+                                         required>
     <br>
-    <input type="password" placeholder="Password" name="Password"
-           autocomplete="off"
-           required>
+    <label for="Password"></label><input type="password" placeholder="Password" id="Password"
+                                         autocomplete="off"
+                                         minlength="7"
+                                         required>
     <br>
-    <input type="submit" value="Sign up">
+    <button type="button" id="SignUpButton"> Sign up
+    </button>
 </form>
 <br>
 <a href="../SignIn/SignIn.html">Already a member? Sign in</a>
 <br>
-
+<script src="SignUp.js" ></script>
 
 </body>
 </html>
