@@ -3,7 +3,7 @@ package application;
 import java.util.regex.Pattern;
 
 public class InputChecker {
-    public String BirthdayCheck( String date ) {
+    public String BirthdayCheck(String date) {
         String regex1 = "^[0-2][0-9]-[0][0-9]-(?:[0-2][0-9])?[0-9][0-9]$";
         String regex2 = "^[0-2][0-9]-[1][0-2]-(?:[0-2][0-9])?[0-9][0-9]$";
         String regex3 = "^[3][0-1]-[0-1][0-9]-(?:[0-2][0-9])?[0-9][0-9]$";
@@ -29,7 +29,7 @@ public class InputChecker {
         return null;
     }
 
-    public String MailCheck( String mail ) {
+    public String MailCheck(String mail) {
         String regex = "^(.+)@(.+).(.+)$";
         Pattern pattern = Pattern.compile(regex);
 
