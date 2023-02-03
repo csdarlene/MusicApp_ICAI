@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:900&display=swap");
+/**
+ * * Title
+ * * You can change the text styles to whatever you want ¯\_(ツ)_/¯
+ * */
+h1 {
+    color: #FFFFFF;
+    font-family: "Roxborough CF", th, serif ;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+::-moz-selection {
+    background: black;
+}
+
+::selection {
+    background: black;
+}
+
+body {
+    font-family: "Roxborough CF", th, serif ;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    min-height: 100vh;
+    background-color: black;
+    background-image: url("../pics/backgroundWave.gif");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+
+a{ color: #ffffff;
+    font-family: "Roxborough CF", th, serif ;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 800px;
+    height: 50%;
+}
+
+.href {
+    margin: 0 auto;
+    width: 180px;
+    height: 60px;
+    padding: 6px 0 0 3px;
+    border: 2px solid #66fcf1;
+    border-radius: 2px;
+    background: none;
+    font-size: 10px;
+    line-height: 54px;
+    color: #fff;
+    letter-spacing: .25em;
+    text-decoration: none;
+    font-weight: 50;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: end;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transition: background .4s, color .4s;
+    transition: background .4s, color .4s;
+    cursor: pointer;
+}
+
+.href:hover {
+    background: #66fcf1;
+    color: #f3f9ff;
+}
