@@ -72,6 +72,14 @@ public class PlaylistRepository {
 
         entityManager.getTransaction().commit();
     }
+    public Playlists findPlaylist(Long id) {
+        entityManager.getEntityManagerFactory();
 
+        entityManager.getTransaction().begin();
+        Playlists playlists = entityManager.find(Playlists.class, id);
+        System.out.println(playlists.toString());
+        entityManager.getTransaction().commit();
+        return playlists;
+    }
 
 }

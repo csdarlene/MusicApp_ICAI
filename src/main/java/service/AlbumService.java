@@ -32,7 +32,7 @@ public class AlbumService {
         albumRepository.updateAlbumName(id, name);
     }
 
-    public Albums findOneAlbums(Long id) {
+    public Albums findAlbums(Long id) {
 
         return albumRepository.findAlbum(id);
     }}

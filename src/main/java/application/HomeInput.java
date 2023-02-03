@@ -233,7 +233,7 @@ public class HomeInput {
                         for (Albums albums : albumService.getAllAlbums()) {
                             if (((albums.getName().toLowerCase()).equals(search))) {
                                 Long id1 = albums.getId();
-                                albumService.findOneAlbums(id1);
+                                albumService.findAlbums(id1);
                                 return;
                             }
                         }

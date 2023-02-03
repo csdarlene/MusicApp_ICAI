@@ -78,17 +78,15 @@ public class SongInput {
             for (Albums album1 : albumService.getAllAlbums()) {
                 if ((album1.getName().toLowerCase()).equals(album)) {
                     Long id = album1.getId();
-                    s.setAlbumID(albumService.findOneAlbums(id));
+                    s.setAlbumID(albumService.findAlbums(id));
                     songService.createSongs(s);
                     songs.add(new Songs(s.getName(), s.getTime(), s.getAlbumID()));
-
-                    MainBehavioral behavioral = new MainBehavioral();
 
                     String artist;
                     System.out.println("Please enter artist name:");
                     sc = new Scanner(System.in);
                     artist = sc.nextLine();
-                    behavioral.linkSongToArtist(artist, song);
+                    MainBehavioral.linkSongToArtist(artist, song);
                     return;
                 }
             }

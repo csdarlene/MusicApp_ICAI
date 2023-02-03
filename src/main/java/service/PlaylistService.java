@@ -32,5 +32,7 @@ public class PlaylistService {
         playlistRepository.updatePlaylistName(id, name);
     }
 
+    public Playlists findPlaylist(Long id) {
 
-}
+        return playlistRepository.findPlaylist(id);
+    }}
