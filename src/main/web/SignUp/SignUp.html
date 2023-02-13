@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-    <style>
-        body {
-            font-family: 'Courier New', monospace;
-        }
-    </style>
-    <title>Sign up - ICAI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign in - ICAI</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../pics/ICAI.png" type="image/x-icon">
- >
-
-
 </head>
 
 <body>
 <div class="center">
-    <a href="../Welcome_Home/FrontPage.html"> ICAI</a>
-<h4>Welcome to ICAI</h4>
-<div>
 
 
 <form method="post">
+    <a href="../Welcome_Home/FrontPage.html"> ICAI</a>
+    <h4>Welcome to ICAI</h4>
     <label for="Name"></label><input type="text" placeholder="Name" id="Name"
                                      autocomplete="off"
                                      required
@@ -31,13 +25,13 @@
                                       autocomplete="off"
                                       required
                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z0-9.-]">
-
-    <h6>Birthday:<label for="Birthday"></label><input type="date" id="Birthday"
+    <br>
+    <h5>Birthday: <label for="Birthday"></label><input type="date" id="Birthday"
                                                       autocomplete="off"
                                                       required
                                                       min="1940-01-01"
                                                       max="2010-12-31"
-    ></h6>
+    ></h5>
 
     <label for="Username"></label><input type="text" placeholder="Username" id="Username"
                                          autocomplete="off"
@@ -51,16 +45,14 @@
     <br>
     <button type="button" id="SignUpButton"> Sign up
     </button>
+    <br>
+    <a href="../SignIn/SignIn.html">Already a member? Sign in</a>
+    <br>
 </form>
+
 </div>
-<div>
 
-
-<br>
-<a href="../SignIn/SignIn.html">Already a member? Sign in</a>
-<br>
 <script src="SignUp.js" ></script>
 
-</div></div>
 </body>
 </html>

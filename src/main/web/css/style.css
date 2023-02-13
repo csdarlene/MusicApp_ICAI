@@ -4,8 +4,52 @@
  * * Title
  * * You can change the text styles to whatever you want ¯\_(ツ)_/¯
  * */
+
+body {
+    font-family: 'Courier New', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aa9ce8;
+    text-align: center;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px #aa9ce8;
+}
+button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #aa9ce8;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+a {
+    color: #aa9ce8;
+    text-decoration: none;
+    margin-top: 10px;
+}
+h4 {
+    color: #8270d9;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
 h1 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: "Roxborough CF", th, serif ;
     font-size: 80px;
     text-align: center;
@@ -33,8 +77,8 @@ body {
     align-items: center;
     height: 0;
     min-height: 100vh;
-    background-color: black;
-    background-image: url("../pics/backgroundWave.gif");
+    background-color: #a396e3;
+    /*background-image: url("../pics/backgroundWave.gif");*/
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -43,7 +87,7 @@ body {
 
 
 
-a{ color: #ffffff;
+a{ color: #6557a9;
     font-family: "Roxborough CF", th, serif ;
     text-align: center;
     font-size: 40px;
@@ -60,13 +104,24 @@ a{ color: #ffffff;
     width: 800px;
     height: 50%;
 }
+.links {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    width: 800px;
+    height: 50%;
+}
 
 .href {
-    margin: 0 auto;
+    position: center;
+    margin:auto;
     width: 180px;
     height: 60px;
     padding: 6px 0 0 3px;
-    border: 2px solid #66fcf1;
+    border: 2px solid #6557a9;
     border-radius: 2px;
     background: none;
     font-size: 10px;
@@ -87,6 +142,6 @@ a{ color: #ffffff;
 }
 
 .href:hover {
-    background: #66fcf1;
+    background: #6557a9;
     color: #f3f9ff;
 }
