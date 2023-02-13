@@ -1,6 +1,6 @@
 package userInput;
 
-import application.HomeInput;
+import app.HomeInput;
 import entity.Artists;
 import entity.RecordLabels;
 import service.ArtistService;

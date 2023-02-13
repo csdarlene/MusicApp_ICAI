@@ -1,6 +1,6 @@
 package userInput;
 
-import application.HomeInput;
+import app.HomeInput;
 import designPatterns.patternBehavioral.ChainOfResponsibility.MainBehavioral;
 import entity.Albums;
 import entity.Songs;

@@ -34,10 +34,16 @@ public class UserService {
 
     public void updateUserPassword( Long id, String password ) {
         userRepository.updateUserPassword(id, password);
-
     }
 
     public void getDetailsofUsers( String  username) {
         userRepository.getDetailsofUsers(username);
     }
+
+
+    public boolean signIn(String username,String password) {
+        return userRepository.signIn(username, password);
+
+    }
+
 }

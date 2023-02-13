@@ -1,4 +1,4 @@
-package application;
+package app;
 
 import java.awt.*;
 import java.io.File;

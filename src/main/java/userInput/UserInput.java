@@ -1,6 +1,6 @@
 package userInput;
 
-import application.HomeInput;
+import app.HomeInput;
 import entity.Users;
 import service.UserService;
 

@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: 'Courier New', monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #313030;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #cd84e3;
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 5px #cd84e3;
+        }
+        button[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #cd84e3;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        a {
+            color: #cd84e3;
+            text-decoration: none;
+            margin-top: 10px;
         }
     </style>
     <title>Sign in - ICAI</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../pics/ICAI.png" type="image/x-icon">
-
-
 </head>
-
 <body>
 <div class="center">
-    <a href="../Welcome_Home/FrontPage.html"> ICAI</a>
-<h4>Welcome back!</h4>
-
-<form method="post">
-    <label for="Username"></label><input type="text" placeholder="Username" id="Username">
-<br>
-    <label for="Password"></label><input type="password" placeholder="Password" id="Password">
-<br>
-
-    <button type="button" id="SignInButton"> Sign in
-    </button>
-</form>
-<a href="../SignUp/SignUp.html">Create your account now</a>
-<br>
-    <script src="SignIn.js" ></script></div>
-
+    <form method="post">
+        <a href="../Welcome_Home/FrontPage.html"> ICAI</a>
+        <h4>Welcome back!</h4>
+        <label for="Username"></label>
+        <input type="text" placeholder="Username" id="Username">
+        <br>
+        <label for="Password"></label>
+        <input type="password" placeholder="Password" id="Password">
+        <br>
+        <button type="button" id="SignInButton"> Sign in</button>
+        <br>
+        <a href="../SignUp/SignUp.html">Create your account now</a>
+    </form>
+</div>
+<script src="SignIn.js"></script>
 </body>
 </html>

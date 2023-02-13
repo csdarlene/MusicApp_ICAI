@@ -13,62 +13,72 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@Path("Users")
-public class UserController{
-    private final UserService UserService = new UserService();
+@Path("users")
+public class UserController {
+    private final UserService userService = new UserService();
 
     @Path("/readUsers")
     @GET
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Users> readUsers(){
-        return UserService.getAllUsers();
+    public List<Users> readUsers() {
+        return userService.getAllUsers();
     }
-    @Path ("/getUser")
+
+    @Path("/getUser")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Users getUser(Users Users){
-        return UserService.findUser(Users.getId());
+    public Users getUser(Users Users) {
+        return userService.findUser(Users.getId());
     }
 
-    @Path ("/getDetailsOfUser")
+    @Path("/getDetailsOfUser")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void getDetailsOfUser(Users Users){
-         UserService.getDetailsofUsers(Users.getUsername());
+    public void getDetailsOfUser(Users Users) {
+        userService.getDetailsofUsers(Users.getUsername());
     }
-
 
 
     @Path("/createUser")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void createUser(Users User){
-        UserService.createUsers(User);
+    public void createUser(Users User) {
+        userService.createUsers(User);
     }
 
-    @Path ("/deleteUser")
+    @Path("/deleteUser")
     @DELETE
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void deleteUser(Users User){
-        UserService.deleteUser(User.getId());
+    public void deleteUser(Users User) {
+        userService.deleteUser(User.getId());
     }
 
-    @Path ("/updatePasswordUser")
+    @Path("/updatePasswordUser")
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void updateNameUser(Users User){
-        UserService.updateUserPassword(User.getId(),User.getPassword());
+    public void updateNameUser(Users User) {
+        userService.updateUserPassword(User.getId(), User.getPassword());
     }
-    @Path ("/updateNameUser")
+
+    @Path("/updateNameUser")
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void updateEmailUser(Users User){
-        UserService.updateUserUsername(User.getId(),User.getUsername());
-    }}
+    public void updateEmailUser(Users User) {
+        userService.updateUserUsername(User.getId(), User.getUsername());
+    }
+
+    @Path("/signIn")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public boolean SignIn(String username,String password) {
+       return userService.signIn(username, password);
+    }
+}
