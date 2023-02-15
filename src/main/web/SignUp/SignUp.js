@@ -12,25 +12,6 @@ document.getElementById("SignUpButton").onclick = function() {
         password: password,
         username: username
     };
+console.log("hi "+ name)
 
-    // method maken voor signup
-    fetch('/signup', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log(data);
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
 };

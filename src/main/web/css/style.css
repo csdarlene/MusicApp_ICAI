@@ -1,9 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins:900&display=swap");
-/**
- * * Title
- * * You can change the text styles to whatever you want ¯\_(ツ)_/¯
- * */
+
 
 body {
     font-family: 'Courier New', monospace;
@@ -12,6 +9,7 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
 form {
     background-color: #ffffff;
     padding: 30px;
@@ -19,6 +17,7 @@ form {
     box-shadow: 0 0 10px #aa9ce8;
     text-align: center;
 }
+
 input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
     width: 100%;
     padding: 10px;
@@ -27,6 +26,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="dat
     border: none;
     box-shadow: 0 0 5px #aa9ce8;
 }
+
 button[type="button"] {
     width: 100%;
     padding: 10px;
@@ -37,20 +37,26 @@ button[type="button"] {
     cursor: pointer;
     margin-top: 20px;
 }
+
 a {
     color: #aa9ce8;
     text-decoration: none;
     margin-top: 10px;
 }
+
 h4 {
     color: #8270d9;
     text-decoration: none;
     margin-top: 10px;
 }
 
+h5 {
+    color: #5d5454;
+}
+
 h1 {
     color: #ffffff;
-    font-family: "Roxborough CF", th, serif ;
+    font-family: "Roxborough CF", th, serif;
     font-size: 80px;
     text-align: center;
     font-weight: 900;
@@ -67,8 +73,15 @@ h1 {
     background: black;
 }
 
+
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 body {
-    font-family: "Roxborough CF", th, serif ;
+    font-family: "Roxborough CF", th, serif;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     position: relative;
@@ -84,15 +97,12 @@ body {
     overflow: hidden;
 }
 
-
-
-
-a{ color: #6557a9;
-    font-family: "Roxborough CF", th, serif ;
+a {
+    color: #6557a9;
+    font-family: "Roxborough CF", th, serif;
     text-align: center;
     font-size: 40px;
 }
-
 
 .center {
     position: absolute;
@@ -104,6 +114,7 @@ a{ color: #6557a9;
     width: 800px;
     height: 50%;
 }
+
 .links {
     position: absolute;
     margin: auto;
@@ -117,7 +128,7 @@ a{ color: #6557a9;
 
 .href {
     position: center;
-    margin:auto;
+    margin: auto;
     width: 180px;
     height: 60px;
     padding: 6px 0 0 3px;

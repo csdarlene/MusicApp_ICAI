@@ -25,7 +25,7 @@ public class ArtistController {
         return artistService.getAllArtists();
     }
 
-    @Path("/getArtist")
+    @Path("/readArtist")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
