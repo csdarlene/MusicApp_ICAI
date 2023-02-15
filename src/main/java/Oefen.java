@@ -13,7 +13,6 @@ import javax.ws.rs.core.MediaType;
 public class Oefen {
         @Path("/oefen1")
         @GET
-        @Produces(MediaType.APPLICATION_JSON)
         public String oefen1(){
             return "Hi";
         }
