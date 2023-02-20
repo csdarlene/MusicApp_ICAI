@@ -3,6 +3,13 @@
   <component name="FacetManager">
     <facet type="web" name="Web">
       <configuration>
+        <descriptors>
+          <deploymentDescriptor name="context.xml" url="file://$MODULE_DIR$/META-INF/context.xml" />
+          <deploymentDescriptor name="glassfish-web.xml" url="file://$MODULE_DIR$/WEB-INF/glassfish-web.xml" />
+          <deploymentDescriptor name="jboss-deployment-structure.xml" url="file://$MODULE_DIR$/WEB-INF/jboss-deployment-structure.xml" />
+          <deploymentDescriptor name="jboss-web.xml" url="file://$MODULE_DIR$/WEB-INF/jboss-web.xml" />
+          <deploymentDescriptor name="sun-web.xml" url="file://$MODULE_DIR$/WEB-INF/sun-web.xml" />
+        </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
@@ -20,7 +27,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_16">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_15">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -33,6 +40,10 @@
     <orderEntry type="library" name="gsap" level="application" />
     <orderEntry type="library" name="meyer-reset" level="application" />
     <orderEntry type="library" name="jquery-2.2.4" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="GlassFish 7.0.1" level="application_server_libraries" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 10.0.27" level="application_server_libraries" />
+    <orderEntry type="library" name="EasyApi" level="project" />
+    <orderEntry type="library" name="fast-request" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.5.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.activation:activation:1.1" level="project" />

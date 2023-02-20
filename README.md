@@ -1,4 +1,4 @@
 # ICAI
 ## Music App
-Web app
+Web ICAI.app
 ## Getting Started

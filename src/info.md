@@ -39,7 +39,7 @@ make sure that it's working correctly. You can use tools such as Postman to test
 its responses.
 
 2. Integrate the REST API with your front-end: If your REST API is going to be used by a web application 
-or mobile app, you'll need to integrate it with your front-end code. This might involve making AJAX 
+or mobile ICAI.app, you'll need to integrate it with your front-end code. This might involve making AJAX 
 calls from your JavaScript code or using a library such as Retrofit for Android development.
 
 3. Secure the REST API: If you're building a public-facing REST API, you'll need to take steps to secure 
@@ -56,8 +56,8 @@ and performance issues, and make updates and improvements as needed.
 
 Testing a REST API using Postman involves the following steps:
 
-1. Install Postman: If you don't have Postman installed, download and install the app from the official website.
-2. Start Postman: Open the Postman app and click on the "New" button to create a new request. 
+1. Install Postman: If you don't have Postman installed, download and install the ICAI.app from the official website.
+2. Start Postman: Open the Postman ICAI.app and click on the "New" button to create a new request. 
 3. Choose the HTTP method: Depending on the endpoint you want to test, choose the appropriate HTTP method (GET, POST, PUT, DELETE, etc.) from the dropdown list. 
 4. Enter the URL: In the URL field, enter the endpoint URL you want to test. 
 5. Set the Headers: Some REST APIs may require specific headers to be set for each request. You can set these headers in Postman by clicking on the "Headers" tab and entering the key-value pairs. 
